@@ -1,0 +1,19 @@
+//Tipografia
+$fuente_principal: 'Monserrart', san-serif;
+//Colores
+$rojo:#e41313;
+$verde: #4cb8b3;
+$rosa: #ff8482;
+$amarillo: #fef46d;
+$morado: #752f97;
+$negro: #000000;
+$blanco:#ffffff;
+l
+body {
+    color : $rojo;
+}
+//mediaquery
+$phone: 480px;
+$tablet:768px;
+$desktop:992px;
+$desktopxl:1200px;
