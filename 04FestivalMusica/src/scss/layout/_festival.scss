@@ -1,29 +1,22 @@
-@use 'base/mixins' as m;
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
 
 .sobre-festival{
-    padding: 5rem 0;
+    @include m.contenedor;
+
     @include m.tablet{
-        @include m.grid(2, 5rem);
-    }
-    .imagen{
-    }
-    .contenido-festiva{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        @include m.tablet{
-            margin-top: 5rem;   
-        }
-        h2{
-            margin-bottom: 2rem;
-        }
-        .fecha{
-            color: v.$rosa;
-            font-weight: 700;
-    
-        }
-    }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap : 5rem;
 
     }
-   
+}
+
+.contenido-festival{
+    margin-top: 5rem;
+    .fecha{
+    color: v.$verde;
+    font-weight: 700;
+    }
+    
+}
